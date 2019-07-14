@@ -79,6 +79,7 @@ public class MainActivity extends Activity {
         } catch (IllegalArgumentException iae) {
             Log.e(TAG, "IllegalArgumentException", iae);
             mResultTextView.setText(getString(R.string.computationError));
+            throw iae;
         }
     }
 
